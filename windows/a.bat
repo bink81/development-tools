@@ -1,0 +1,1 @@
+c:\Utils\scripts\new.bat %1

@@ -1,0 +1,1 @@
+cd "C:\Documents and Settings\rma\My Documents\PYTHON"

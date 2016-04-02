@@ -1,0 +1,1 @@
+start explorer /select,"C:\Users\bink\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"

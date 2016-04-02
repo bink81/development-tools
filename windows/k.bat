@@ -1,0 +1,1 @@
+"C:\Program Files\Google\Chrome\Application\chrome.exe" "http://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000677541"

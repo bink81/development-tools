@@ -1,0 +1,1 @@
+start explorer /select,C:\Program Files

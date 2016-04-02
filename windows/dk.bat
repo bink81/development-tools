@@ -1,0 +1,1 @@
+"C:\Program Files\Mozilla Firefox\firefox.exe" http://www.google.com/search?q=site:dk+%1+%2+%3

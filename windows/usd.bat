@@ -1,0 +1,1 @@
+"C:\Program Files\Google\Chrome\Application\chrome.exe" http://www.google.dk/search?q=%1+usd+in+dkk

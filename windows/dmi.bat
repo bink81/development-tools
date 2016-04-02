@@ -1,0 +1,1 @@
+"C:\Program Files\Mozilla Firefox\firefox.exe" http://www.dmi.dk/vejr/til-lands/byvejr/by/vis/DK/1000/K%C3%B8benhavn,Danmark

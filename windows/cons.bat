@@ -1,0 +1,1 @@
+C:\Users\bink\AppData\Local\Google\Chrome\Application\chrome.exe "https://console.aws.amazon.com/ec2/home?region=us-west-2#s=Instances"

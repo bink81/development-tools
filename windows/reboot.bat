@@ -1,0 +1,1 @@
+shutdown -r -f 60

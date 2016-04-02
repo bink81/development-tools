@@ -1,0 +1,1 @@
+"C:\Program Files\Mozilla Firefox\firefox.exe" http://www.google.dk/search?q=%1+euro+in+dkk

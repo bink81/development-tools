@@ -1,0 +1,1 @@
+start explorer /select,c:\utils\scripts\2.bat

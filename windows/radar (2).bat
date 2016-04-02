@@ -1,0 +1,1 @@
+"C:\Program Files\Mozilla Firefox\firefox.exe" http://www.dmi.dk/dmi/index/danmark/radar.htm

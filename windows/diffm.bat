@@ -1,0 +1,1 @@
+"C:\Program Files\SourceGear\DiffMerge\DiffMerge.exe" %1 %2

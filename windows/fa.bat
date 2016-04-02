@@ -1,0 +1,1 @@
+C:\Users\bink\AppData\Local\Google\Chrome\Application\chrome.exe www.fakta.dk/tilbudsavis.html

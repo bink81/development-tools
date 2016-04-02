@@ -1,0 +1,1 @@
+"C:\Program Files\Notepad++\notepad++.exe" C:\scripts\%1.bat

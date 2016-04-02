@@ -1,0 +1,1 @@
+"C:\Program Files\Google\Chrome\Application\chrome.exe" http://www.dmi.dk/dmi/index/danmark/radar.htm
