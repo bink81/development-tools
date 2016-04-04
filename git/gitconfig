@@ -1,0 +1,108 @@
+[user]
+	email = rm@exerp.com
+	name = Robert Marzeta
+[core]
+	editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
+	excludesfile = C:\\Users\\Robert\\Documents\\gitignore_global.txt
+	preloadindex = true
+	fscache = true
+	autoCRLF = false
+[merge]
+	tool = p4merge
+[difftool "diffmerge"]
+	trustExitCode = false 
+	cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' "$LOCAL" "$REMOTE"	
+[mergetool "sourcetree"]
+	cmd = 'C:/Program Files/TortoiseGit/bin/TortoiseGitMerge.exe'  -base:\"$BASE\" -mine:\"$LOCAL\" -theirs:\"$REMOTE\" -merged:\"$MERGED\"
+	trustExitCode = true
+[difftool]
+	prompt = false 	
+[diff]
+	tool = diffmerge
+	renames = copies
+	renameLimit = 99999
+[alias]
+	df = difftool
+	bv = branch -vv
+	ba = branch -ra
+	bd = branch -d
+	ca = commit --amend
+	cb = checkout -b
+	cm = commit -a --amend -C HEAD
+	ci = commit -a -v
+	co = checkout 
+	cod = checkout develop
+	d = diff --word-diff
+	ds = diff --staged
+	
+	# log related - thanks to @mwd410
+	l = log 
+	lh = log --graph
+	la = !git lh --date-order --all 2> /dev/null
+	lb = log --graph --simplify-by-decoration
+	lba = !git lb --all 
+	h = !git --no-pager log --graph -n 15
+	a = !git --no-pager la -n 15
+	lsv = log --pretty=format:"%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]" --decorate --date=short --numstat    # a verbose ls, shows changed files too
+
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	lla = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat --author=rm@*
+	ld = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph
+	ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+	lg = log --all --graph --oneline --decorate
+	last = log  --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat -1 HEAD
+	
+	mm = merge --no-ff
+	st = status --short --branch 
+	tg = tag -a 
+	p = push
+	
+	r = reset
+	r1 = reset HEAD^
+	r2 = reset HEAD^^
+	rh = reset --hard
+	rh1 = reset HEAD^ --hard
+	rh2 = reset HEAD^^ --hard
+	rhdev = reset --hard origin/develop
+	
+	c = commit -m
+	a = add
+	aa = !git add -u && git add . && git status
+	cob = checkout -b 
+	pulla = !git fetch origin && git rebase origin
+	pulldev = !git fetch && git rebase origin/develop
+	ir = !git rebase -i origin/develop
+	rc = !git rebase --continue
+	done = !git fetch && git rebase origin/develop && git checkout develop && git merge @{-1} && rake && git push
+	springcleaning = for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'
+	dev = checkout develop
+	cp = cherry-pick
+	
+	# stash shortcuts
+	sl = stash list
+	sa = stash apply
+	ss = stash save
+	ta = tail server.log -f | grep -v hibernate
+	fbp = "!f() { \
+	git checkout -b feature/$1 && git push --set-upstream origin feature/$1; \
+	}; f"
+	
+[color]  
+	diff = auto  
+	status = auto  
+	branch = auto 
+	ui = auto
+[branch]  
+	autosetuprebase = always
+	autosetupmerge = true
+[mergetool "p4merge"]
+	cmd = 'C:/Program Files/Perforce/p4merge.exe' \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+[advice]
+	pushNonFastForward = false
+[push]
+	default = upstream
+[help]
+	autocorrect = 1
+[gc]
+	auto = 256
+
